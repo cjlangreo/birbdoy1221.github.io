@@ -1,38 +1,16 @@
 <!DOCTYPE html>
-<html lang = "en-PH">
+<html lang = "en">
 	<head>
-		<title>Page Title</title>
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+		<script type = "text/javascript" src = index.js></script>
 	</head>
-	<body style = "background-color:powderblue">
-		<h1 style="font-family: lexend; font-size:600%;">h1</h1>
-		<h2 style = 'color:blue; text-align:center'>h2</h2>
-		<hr>
-		<h3 style = "background-color:tomato ;">h3</h3>
-		<h4>h4</h4>
-		<h5 style = "color:red">h5</h5>
-		<h6 style = "font-family:lexend">h6</h6>
-		<b>This text is bold</b>
-		<br>
-		<strong>This text is strong</strong>
-		<br>
-		<i>This text is italic</i>
-		<br>
-		<mark>This text is marked</mark>
-		<br>
-		<small>This text is small</small>
-		<br>
-		<del>This text is deleted</del>
-		<br>
-		<ins>This text is inserted</ins>
-		<br>
-		<sub>This text is subscript</sub>
-		<br>
-		<sup>This text is superscript</sup>
-		<br>
-		<em>This text is emphasized</em>
-		<p>My first <br> paragraph.</p>
-		<a href = "https://w3schools.com">This is a link</a>
-		<br>
-		<img src = "image.jpg" alt = "My Photo" title = "My Photo">
+	<body>
+		<h1 id = "text"></h1>
 	</body>
+	<script>
+		let userInput = prompt("What is your name?");
+		display_text(userInput);
+		
+	</script>
 </html>

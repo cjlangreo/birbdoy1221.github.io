@@ -1,9 +1,18 @@
-function convert_string(value){
-    return parseInt(value)
-}
+const collection = {
+    alphabet: 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz',
+    numbers: '0123456789',
+    symbols: '!@#$%^&*()_+-=[]{}|;:\'",.<>?/~`'
+};
 
-function concat_values(value1, value2, value3){
-    alert(value1 + value2 + value3)
+function display_text(text) {
+    var textField = document.getElementById('text');
+    console.log(text)
+    let textIndex = textField.textContent.length - 1;
+    let currentIndex = 0;
+    setInterval(() => {
+        if (currentIndex < text.length) {
+            textField.textContent += text[currentIndex];
+            currentIndex++;
+        }
+    }, 70)
 }
-
-let firstName = "Chanz";

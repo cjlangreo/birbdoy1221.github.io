@@ -8,6 +8,10 @@
   list-style: none;
 }
 
+body{
+  background-color: black;
+}
+
 header{
   position: fixed;
   top: 1rem;
@@ -17,16 +21,20 @@ header{
   align-items: center;
   justify-content: center;
   gap: 5rem;
-  background-color: rgba(0,0,0,0.8);
+  background: linear-gradient(
+    to top,
+    #FF8A05,
+    #F5BD25
+  );
+  background-size: 200% auto;
   backdrop-filter: blur(8px);
-  color: white;
   padding: 0.5rem 1.5rem;
   border-radius: 3rem;
   z-index: 1000;
 }
 
 .logo{
-  color: white;
+  color: black;
   font-size: 1.3rem;
   font-weight: 600;
   text-wrap: nowrap;
@@ -35,7 +43,7 @@ header{
 
 .logo:hover{
   transform: scale(1.05);
-}
+} 
 
 .nav-links{
   display: flex;
@@ -44,16 +52,139 @@ header{
 
 li a{
   position: relative;
-  color: white;
-  font-weight: 300;
+  color: rgb(0, 0, 1.8);
+  font-weight: 500;
 }
 
 li a::before{
   position: absolute;
   content: "";
-  width: 0;
-  left: 0;
-  height: 5px;
-  top: 25px;
-  border-radius: 1rem;
+  bottom: 0;
+  left: -7px;
+  width: 4px;
+  height: 0;
+  transition: 0.3s ease-in-out;
+  background: linear-gradient(to top, rgb(0,157,255), rgb(255, 0, 255));
+}
+
+li a:hover::before{
+  height: 100%;
+}
+
+.visit-btn{
+  padding: 0.8rem 1.5rem;
+  border-radius: 3rem;
+  border: none;
+  font-weight: 500;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  text-wrap: nowrap;
+  transition: 0.3s ease-in-out;
+  background: linear-gradient(to right, rgb(0,157,255), rgb(255, 0, 255));
+}
+
+.visit-btn:hover{
+  background: linear-gradient(to right, rgb(255, 0, 255), rgb(0,157,255));
+  transform: scale(1.03);
+}
+
+#menu-icon{
+  font-size: 2rem;
+  display: none;
+}
+
+section{
+  min-height: 100vh;
+  padding: 8rem 12%;
+  width: 100%;
+  position: relative;
+}
+
+.about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about .about-container{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 10rem;
+}
+
+.about img{
+  width: 30vw;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    #FF8A05,
+    #F5BD25
+  );
+  border: 10px solid transparent;
+}
+
+.info-box{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  color: #FF8A05;
+}
+
+.info-box h3{
+  font-size: 1.8rem;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.info-box h1{
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.info-box span{
+  background: repeating-linear-gradient(
+    to right,
+    rgb(0,157,255),
+    rgb(255, 0, 255),
+    red
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+  font-weight: 600;
+  animation: gradientAnimation 1s ease-in-out infinite alternate;
+}
+
+@keyframes gradientAnimation {
+  0% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 100% 50%;
+  }
+}
+
+.btn-group{  
+  display: flex;
+  gap: 2rem;
+}
+
+.btn{
+  border-radius: 3rem;
+  padding : 0.5rem 1.5rem;
+  cursor: pointer;
+  font-weight: 500;
+  text-wrap: nowrap;
+  transition: 0.2s ease-in-out;
+  border: 2px solid #FF8A05;
+}
+.btn:hover{
+  background-color: #FF8A05;
+  color: black;
 }

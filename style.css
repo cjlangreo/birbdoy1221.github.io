@@ -115,14 +115,14 @@ section{
 }
 
 .about img{
-  width: 30vw;
+  width: 20vw;
+  height: 20vw;
   border-radius: 50%;
-  background: radial-gradient(
-    circle,
-    #FF8A05,
-    #F5BD25
-  );
-  border: 10px solid transparent;
+  background-color: #fff;
+  box-shadow:
+    0 0 60px 30px #ffc400,
+    0 0 100px 60px rgba(255, 0, 255, 0)
+
 }
 
 .info-box{

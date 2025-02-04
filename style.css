@@ -13,8 +13,9 @@ body{
 }
 
 header{
+  font-size: 1.2rem;
   position: fixed;
-  top: 1rem;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -28,17 +29,18 @@ header{
   );
   background-size: 200% auto;
   backdrop-filter: blur(8px);
-  padding: 0.5rem 1.5rem;
-  border-radius: 3rem;
+  padding: 1rem 1.5rem;
+  border-radius: 0 0 3rem 3rem;
   z-index: 1000;
 }
 
 .logo{
   color: black;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 600;
   text-wrap: nowrap;
   transition: 0.1s ease-in-out;
+  font-weight: bold;
 }
 
 .logo:hover{
@@ -187,4 +189,19 @@ section{
 .btn:hover{
   background-color: #FF8A05;
   color: black;
+}
+
+.socials {
+  display: flex;
+  gap: 2rem;
+}
+
+.socials i{
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.socials i:hover {
+  transform: scale(1.1);
 }

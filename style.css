@@ -8,6 +8,12 @@
   list-style: none;
 }
 
+:root {
+  --main: #00FF00;
+  --secondary: #F5BD25;
+  --green: #00FF00;
+}
+
 body{
   background-color: black;
 }
@@ -24,8 +30,8 @@ header{
   gap: 5rem;
   background: linear-gradient(
     to top,
-    #FF8A05,
-    #F5BD25
+    var(--main),
+    var(--secondary)
   );
   background-size: 200% auto;
   backdrop-filter: blur(8px);
@@ -122,7 +128,7 @@ section{
   border-radius: 50%;
   background-color: #fff;
   box-shadow:
-    0 0 60px 30px #FF8A05,
+    0 0 60px 30px var(--main),
     0 0 100px 60px rgba(255, 0, 255, 0)
 
 }
@@ -134,7 +140,7 @@ section{
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  color: #FF8A05;
+  color: var(--main);
 }
 
 .info-box h3{
@@ -185,10 +191,10 @@ section{
   font-weight: 500;
   text-wrap: nowrap;
   transition: 0.2s ease-in-out;
-  border: 2px solid #FF8A05;
+  border: 2px solid var(--main);
 }
 .btn:hover{
-  background-color: #FF8A05;
+  background-color: var(--main);
   color: black;
 }
 
@@ -201,6 +207,7 @@ section{
   font-size: 2.5rem;
   cursor: pointer;
   transition: 0.2s ease-in-out;
+  color: var(--main);
 }
 
 .socials i:hover {

@@ -291,6 +291,7 @@ canvas {
   position: fixed;
   top: 50%;
   left: 50%;
+  text-align: center;
   color: red;
   z-index: 5;
 }

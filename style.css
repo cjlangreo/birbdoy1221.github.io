@@ -286,3 +286,10 @@ canvas {
 ::-webkit-scrollbar-thumb {
   background: var(--main);
 }
+
+#watermark {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  color: red;
+}

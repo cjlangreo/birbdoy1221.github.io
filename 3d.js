@@ -7,14 +7,14 @@ const renderer = new THREE.WebGLRenderer({
 });
 
 renderer.setPixelRatio(window.devicePixelRatio);
-renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setSize(window.innerWidth - 20, window.innerHeight - 20);
 camera.position.setZ(30);
 
 renderer.render(scene, camera);
 
 let shapeColor = 0x00ff00;
 
-const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
+const geometry = new THREE.TorusGeometry(12, 5, 16, 100);
 const material = new THREE.MeshBasicMaterial({ color: shapeColor, wireframe: true });
 const torus = new THREE.Mesh(geometry, material);
 

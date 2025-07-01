@@ -289,8 +289,8 @@ canvas {
 
 #watermark {
   position: fixed;
-  right: 0;
-  bottom: 0;
+  top: 50%;
+  left: 50%;
   color: red;
   z-index: 5;
 }

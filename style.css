@@ -6,6 +6,11 @@
   text-decoration: none;
   scroll-behavior: smooth;
   list-style: none;
+  user-select: none;
+}
+
+img{
+  -webkit-user-drag: none;
 }
 
 :root {
@@ -182,6 +187,7 @@ section{
 .btn-group{  
   display: flex;
   gap: 2rem;
+  user-select: all;
 }
 
 .btn{
@@ -259,6 +265,7 @@ canvas {
   justify-content: left;
   cursor: pointer;
   transition: 0.2s ease-in-out;
+  user-select: all;
 }
 
 .grid-card:hover{
